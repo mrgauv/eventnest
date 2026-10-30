@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventNest - Events</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="EventNest logo" width="150"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" id="authLink">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>All events</h2>
+    <div class="tools">
+      <input id="search" type="search" placeholder="Search by title or venue">
+      <select id="category">
+        <option>All</option><option>Tech</option><option>Music</option>
+        <option>Business</option><option>Sports</option><option>Arts</option>
+      </select>
+    </div>
+    <p id="msg"></p>
+    <div id="eventList"></div>
+  </div>
+  <footer>
+    <p>Team Zero Seven: Gaurav Singh (12626905), Sahil (12623273)</p>
+    <p>CSE326 course project, Lovely Professional University, Phagwara. Event data is sample data.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

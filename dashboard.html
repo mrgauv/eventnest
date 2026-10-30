@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventNest - Dashboard</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="EventNest logo" width="150"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" id="authLink">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2 id="hello">Dashboard</h2>
+    <div id="stats"></div>
+
+    <h2>Registrations</h2>
+    <div class="wrap">
+      <table>
+        <tr><th>Event</th><th>User</th><th>Status</th><th>Action</th></tr>
+        <tbody id="regRows"></tbody>
+      </table>
+    </div>
+
+    <!-- Only the admin sees this part -->
+    <div id="admin" hidden>
+      <h2>Manage events</h2>
+      <form id="eform">
+        <input type="hidden" id="eid">
+        <input class="box" type="text" id="etitle" placeholder="Event title" required>
+        <select class="box" id="ecategory">
+          <option>Tech</option><option>Music</option><option>Business</option><option>Sports</option><option>Arts</option>
+        </select>
+        <input class="box" type="date" id="edate" required>
+        <input class="box" type="time" id="etime" required>
+        <input class="box" type="text" id="evenue" placeholder="Venue" required>
+        <input class="box" type="number" id="eseats" min="1" placeholder="Seats" required>
+        <textarea class="box" id="edesc" rows="3" placeholder="Short description"></textarea>
+        <button type="submit">Save event</button>
+        <p id="emsg"></p>
+      </form>
+      <div class="wrap">
+        <table>
+          <tr><th>Event</th><th>Date</th><th>Seats taken</th><th>Action</th></tr>
+          <tbody id="eventRows"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Team Zero Seven: Gaurav Singh (12626905), Sahil (12623273)</p>
+    <p>CSE326 course project, Lovely Professional University, Phagwara. Event data is sample data.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

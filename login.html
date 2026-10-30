@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventNest - Login</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="EventNest logo" width="150"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" id="authLink">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Login</h2>
+    <div class="demo">
+      <b>Demo accounts</b>
+      <ul>
+        <li>Admin: admin@eventnest.com / admin123</li>
+        <li>Student: student@eventnest.com / student123</li>
+      </ul>
+    </div>
+    <form id="loginForm">
+      <label for="lemail">Email</label><br>
+      <input class="box" type="email" id="lemail" required>
+      <label for="lpass">Password</label><br>
+      <input class="box" type="password" id="lpass" required>
+      <button type="submit">Login</button>
+      <p id="lmsg"></p>
+    </form>
+
+    <h2>New here? Sign up</h2>
+    <form id="signupForm">
+      <label for="sname">Full name</label><br>
+      <input class="box" type="text" id="sname" required>
+      <label for="semail">Email</label><br>
+      <input class="box" type="email" id="semail" required>
+      <label for="spass">Password (min 6 characters)</label><br>
+      <input class="box" type="password" id="spass" required>
+      <label for="spass2">Confirm password</label><br>
+      <input class="box" type="password" id="spass2" required>
+      <button type="submit">Create account</button>
+      <p id="smsg"></p>
+    </form>
+  </div>
+  <footer>
+    <p>Team Zero Seven: Gaurav Singh (12626905), Sahil (12623273)</p>
+    <p>CSE326 course project, Lovely Professional University, Phagwara. Event data is sample data.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
