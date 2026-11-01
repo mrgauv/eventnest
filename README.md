@@ -1,6 +1,6 @@
 # EventNest – Local Event Discovery Platform
 
-**Live site:** https://mrgauvi.github.io/eventnest/
+**Live site:** https://mrgauv.github.io/eventnest/
 
 **Course:** CSE326 | Lovely Professional University, Phagwara
 
